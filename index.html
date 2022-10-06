@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <meta name="description" content="Lorem ipsum">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="block__one "><h1>Блок №1</h1></div>
+        <div id="map"class="block__second display">
+            <div class="block bg-red left"></div>
+            <div class="block bg-yellow block__dotted right"></div>
+            <div class="block bg-green"></div>
+        </div>
+        <div class="block__third display">
+            <div class="block block__width-min"><button type="button" class="btn btn-warning js-btn__block-one">Кнопка 1</button></div>
+            <div class="block block__width-big"><button type="button" class="btn btn-success js-btn__remove">Кнопка 2</button></div>
+        </div>
+        <div class="block__href"><a href="form.html">Ссылка на страницу с формой</a></div>
+    </div>
+    <div id="popup" class="popup open">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close fa fa-close close-popup"></a>
+                <div class="popup__title">Привет, мир!</div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/d4346b87e7.js" crossorigin="anonymous"></script>
+    <script>
+        
+        $(() => {
+            $(".js-btn__block-one").click(() => {
+                $(".block__one").slideToggle();
+            });
+        });
+        
+    </script>
+    <script src="js/popup.js"></script>
+    <script src="js/change.js"></script>
+</body>
+
+</html>
